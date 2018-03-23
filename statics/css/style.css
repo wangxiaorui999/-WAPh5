@@ -1,0 +1,737 @@
+/**
+ * Main Style
+ * @author zhangjunfa
+ * @Todo: rem转为px后安卓微信浏览器不支持小数点
+ */
+
+html {
+	height: 100%;
+	font-size: 100px;
+}
+body {
+	background-color: #000000;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	line-height: 0;
+	font-family: 'Microsoft Yahei';
+	display: none;
+}
+a, a:hover {
+	text-decoration: none;
+}
+a,button,input,textarea{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input {
+	vertical-align: middle;
+}
+textarea {
+	resize: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	display: inline-table;
+}
+/* Hides from IE-mac */
+*html .clearfix {
+	height: 1%;
+}
+.clearfix { 
+	display: block; 
+}
+/* End hide from IE-mac */
+/* IE6 */
+* html .clearfix {
+	zoom: 1; 
+}
+/* IE7 */
+*:first-child+html .clearfix {
+	zoom: 1; 
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+img {
+	max-width: 100%;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+	-webkit-appearance: none;
+}
+.container {
+	position: absolute;
+	margin: 0 auto;
+	width: 6.4rem;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+.hide {
+	display: none;
+}
+video {
+    object-fit: contain;
+}
+
+/**
+ * Loading
+ */
+.loading {
+	background: url(../images/loading.jpg) center center no-repeat;
+	background-size: 100% auto;
+}
+.loading .content {
+	background: url(../images/loading_content.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 3.6rem;
+	height: 3.6rem;
+	margin-left: -1.8rem;
+	margin-top: -1.8rem;
+	left: 50%;
+	top: 50%;
+}
+.loading-sprite {
+	position: absolute;
+	width: 3.6rem;
+	height: 2rem;
+	left: 0;
+	top: 0;
+}
+.loading-sprite canvas {
+	width: 100%;
+}
+.loading .progress {
+	position: absolute;
+	width: 3.6rem;
+	height: 0.8rem;
+	left: 0;
+	bottom: 0;
+	font-size: 0.24rem;
+	color: #623C23;
+	text-align: center;
+	line-height: 0.8rem;
+}
+.loading .progress span {
+	font-size: 0.36rem;
+}
+
+/**
+ * Page
+ */
+.arrow {
+	background: url(../images/arrow.png) no-repeat;
+	background-size: 100% auto;
+	position: fixed;
+	width: 0.58rem;
+	height: 0.58rem;
+	margin-left: -0.29rem;
+	left: 50%;
+	bottom: 0.2rem;
+}
+.video-tips {
+	background: url(../images/page2_tips_text.png) no-repeat;
+	background-size: 100% auto;
+	position: fixed;
+	width: 6.4rem;
+	height: 0.58rem;
+	left: 0;
+	bottom: 0.2rem;
+}
+.page1 {
+	background: url(../images/page1.jpg) no-repeat;
+	background-size: 100% auto;
+	position: relative;
+	width: 6.4rem;
+}
+.page1 .cloud-1 {
+	background: url(../images/cloud_1.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 1.6rem;
+	height: 0.6rem;
+	/*left: 1.14rem;*/
+	left: -1.6rem;
+	top: 1.1rem;
+	animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+}
+.page1 .cloud-2 {
+	background: url(../images/cloud_2.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 1.6rem;
+	height: 0.6rem;
+	left: -1.6rem;
+	top: 1.8rem;
+	animation-delay: 6s;
+	-webkit-animation-delay: 6s;
+}
+.page1 .cloud-3 {
+	background: url(../images/cloud_3.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 1.6rem;
+	height: 0.6rem;
+	/*left: 4.8rem;*/
+	left: -1.6rem;
+	top: 1.75rem;
+}
+.page1 .content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.page1 .people {
+	background: url(../images/people.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+.page1 .stone {
+	background: url(../images/stone.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+}
+.page1 .purport {
+	background: url(../images/purport.png) top center no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 6.4rem;
+	height: 4rem;
+	left: 0;
+	bottom: 0.6rem;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+
+.page2 {
+	background: url(../images/page2.jpg) no-repeat;
+	background-size: 100% auto;
+	position: relative;
+	width: 6.4rem;
+}
+.page2 .content {
+	background: url(../images/video_content.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.page2 .content .video-title {
+	background: url(../images/video_title.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 6.4rem;
+	height: 1.5rem;
+	top: 0;
+	left: 0;
+}
+.page2 .content .video {
+	background: url(../images/video_pic.jpg) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.6rem;
+	height: 7.48rem;
+	left: 0.9rem;
+	top: 1.75rem;
+}
+.page2 .content .video .play-btn {
+	background: url(../images/video_play.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 4.6rem;
+	height: 7.48rem;
+	left: 0;
+	top: 0;
+}
+.page2 .nail {
+	background: url(../images/nail.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 6.4rem;
+	height: 1.6rem;
+	left: 0;
+	bottom: 0;
+}
+
+.page3 {
+	background: url(../images/page3.jpg) no-repeat;
+	background-size: 100% auto;
+	position: relative;
+	width: 6.4rem;
+}
+.page3 .content {
+	position: absolute;
+	width: 100%;
+	height: 10.8rem;
+	top: 0;
+}
+.card-wrap .card-title a {
+	position: absolute;
+	width: 2.2rem;
+	height: 0.56rem;
+	left: 2.1rem;
+	top: 1.64rem;
+	display: none;
+}
+.card-wrap .card-title a.beauty {
+	background: url(../images/beauty.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-title a.dragon {
+	background: url(../images/dragon.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-title a.operator {
+	background: url(../images/operator.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-title a.touch-nav-item-current {
+	display: block;
+}
+.card-wrap .card-body {
+	position: absolute;
+	width: 6.4rem;
+	height: 8.4rem;
+	left: 0;
+	bottom: 0;
+}
+.card-wrap .card-body .card {
+	width: 6.4rem;
+	height: 7.18rem;
+}
+.card-wrap .card-body .card .a1,
+.card-wrap .card-body .card .a2,
+.card-wrap .card-body .card .a3 {
+	position: absolute;
+	width: 6.4rem;
+	height: 7.18rem;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.card-wrap .card-body .card.beauty .a1 {
+	background: url(../images/beauty_card_1.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-body .card.beauty .a2 {
+	background: url(../images/beauty_card_2.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-body .card.beauty .a3 {
+	background: url(../images/beauty_card_3.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-body .card.dragon .a1 {
+	background: url(../images/dragon_card_1.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-body .card.dragon .a2 {
+	background: url(../images/dragon_card_2.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-body .card.dragon .a3 {
+	background: url(../images/dragon_card_3.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-body .card.operator .a1 {
+	background: url(../images/operator_card_1.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-body .card.operator .a2 {
+	background: url(../images/operator_card_2.png) no-repeat;
+	background-size: 100% auto;
+}
+.card-wrap .card-body .card.operator .a3 {
+	background: url(../images/operator_card_3.png) no-repeat;
+	background-size: 100% auto;
+}
+
+.card-wrap .card-body .card.active {
+	display: block;
+}
+.card-wrap .card-body .prev {
+	background: url(../images/prev_btn.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 0.28rem;
+	height: 0.84rem;
+	left: 0.23rem;
+	top: 2.56rem;
+}
+.card-wrap .card-body .next {
+	background: url(../images/next_btn.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 0.28rem;
+	height: 0.84rem;
+	right: 0.23rem;
+	top: 2.56rem;
+}
+.card-wrap .card-body .prev:active,
+.card-wrap .card-body .next:active {
+	opacity: 0.5;
+}
+.card-wrap .card-body .bottom {
+	background: url(../images/card_bottom.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 6.4rem;
+	height: 1.1rem;
+	left: 0;
+	bottom: 0;
+}
+
+.page4 {
+	background: url(../images/page4.jpg) no-repeat;
+	background-size: 100% auto;
+	position: relative;
+	width: 6.4rem;
+}
+.page4 .content {
+	background: url(../images/table.png) 0 -0.75rem no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.page4 .content .title {
+	background: url(../images/page4_title.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 3.8rem;
+	height: 1.4rem;
+	left: 1.28rem;
+	top: 0.48rem;
+	opacity: 0;
+}
+.page4 .content .desc {
+	background: url(../images/page4_desc.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 3.4rem;
+	height: 2.2rem;
+	left: 1.55rem;
+	top: 1.75rem;
+	opacity: 0;
+}
+.page4 .table-bottom {
+	background: url(../images/table_bottom.jpg) 0 0 no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 100%;
+	height: 0.29rem;
+	left: 0;
+	bottom: 0;
+}
+
+.page5 {
+	background: url(../images/page5.jpg) no-repeat;
+	background-size: 100% auto;
+	position: relative;
+	width: 6.4rem;
+}
+.page5 .content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.page5 .pic-scrolls {
+	position: absolute;
+	width: 2.8rem;
+	height: 5.4rem;
+}
+.page5 .pic-scrolls.one {
+	background: url(../images/pic_scrolls_1.png) no-repeat;
+	background-size: 100% auto;
+	left: 0.4rem;
+	top: 4.53rem;
+	opacity: 0;
+}
+.page5 .pic-scrolls.two {
+	background: url(../images/pic_scrolls_2.png) no-repeat;
+	background-size: 100% auto;
+	left: 3.21rem;
+	top: 0.36rem;
+	opacity: 0;
+}
+.page5 .pic-scrolls.three {
+	background: url(../images/pic_scrolls_3.png) no-repeat;
+	background-size: 100% auto;
+	left: 3.21rem;
+	top: 4.87rem;
+	opacity: 0;
+}
+.page5 .bottom {
+	background: url(../images/pic_scrolls_bottom.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 6.4rem;
+	height: 0.13rem;
+	left: 0;
+	bottom: 0;
+	display: none;
+}
+
+.page6 {
+	background: url(../images/page6.jpg) no-repeat;
+	background-size: 100% auto;
+	position: relative;
+	width: 6.4rem;
+}
+.page6 .content {
+	position: absolute;
+	width: 100%;
+	height: 10.8rem;
+	top: 0;
+}
+.page6 .title {
+	background: url(../images/page6_title.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 3.9rem;
+	height: 1.35rem;
+	left: 1.23rem;
+	top: 0.3rem;
+}
+.page6 .desc {
+	background: url(../images/page6_desc.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 6.4rem;
+	height: 8.1rem;
+	left: 0;
+	top: 1.64rem;
+}
+.page6 .bottom {
+	background: url(../images/page6_bottom.png) no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	width: 6.4rem;
+	height: 0.89rem;
+	left: 0;
+	bottom: 0;
+}
+
+.register-btn {
+	position: fixed;
+	width: 0.62rem;
+	height: 1.94rem;
+	right: 0.1rem;
+	bottom: 0.76rem;
+}
+.register-btn canvas {
+	width: 100%;
+}
+.btn-music {
+	background: url(../images/stop_btn.png) no-repeat;
+	background-size: 100% auto;
+	position: fixed;
+	width: 0.5rem;
+	height: 0.5rem;
+	top: 0.27rem;
+	right: 0.27rem;
+}
+.btn-music.play {
+	background: url(../images/play_btn.png) no-repeat;
+	background-size: 100% auto;
+}
+
+/**
+ * Animate
+ */
+.zMove {
+	-webkit-backface-visibility: visible;
+	-webkit-transform-origin: center center;
+	-webkit-animation: zMove 13s 0s infinite linear normal forwards;
+} 
+@-webkit-keyframes zMove {
+	0%{
+		-webkit-transform: translateX(0);
+	} 
+	100%{
+		-webkit-transform: translateX(8rem);
+	} 
+}
+
+.zFadeIn{
+	-webkit-animation: zFadeIn 0.5s 0s linear both;
+}
+@-webkit-keyframes zFadeIn {
+	0%{
+		opacity: 0;
+	} 
+	100%{
+		opacity: 1;
+	} 
+}
+
+.fadeInUpBig {
+	-webkit-animation: fadeInUpBig 1.5s .2s ease both;
+	-moz-animation: fadeInUpBig 1.5s .2s ease both;
+}
+@-webkit-keyframes fadeInUpBig{
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(2000px);
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:translateY(0);
+	}
+}
+
+.zTip {
+	-webkit-animation: zTip 1s 0s infinite ease both;
+}
+@-webkit-keyframes zTip{
+	0%{
+		-webkit-transform:translateY(0.2rem);
+	}
+	100%{
+		-webkit-transform:translateY(0);
+	}
+}
+
+.fadeInLeft {
+	-webkit-animation:fadeInLeft 0.5s 0s ease both;
+}
+@-webkit-keyframes fadeInLeft {
+	0%{
+		opacity:0;
+		-webkit-transform:translateX(-20px)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateX(0)
+	}
+}
+
+.fadeInRight {
+	-webkit-animation:fadeInRight 0.5s 0s ease both;
+}
+@-webkit-keyframes fadeInRight {
+	0%{
+		opacity:0;
+		-webkit-transform:translateX(20px)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateX(0)
+	}
+}
+
+.fadeInUp {
+	-webkit-animation:fadeInUp 0.5s 0s ease both;
+}
+@-webkit-keyframes fadeInUp {
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(-20px)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(0)
+	}
+}
+
+.fadeInDown {
+	-webkit-animation:fadeInDown 0.5s 0s ease both;
+}
+@-webkit-keyframes fadeInDown {
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(20px)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(0)
+	}
+}
+
+.loading-sprite-animate {
+	background: url(../images/loading_sprite.png) no-repeat;
+	background-size: 3.6rem auto;
+	-webkit-animation: loading-sprite-animate 3s steps(8) infinite 0s forwards;
+}
+@-webkit-keyframes loading-sprite-animate {
+    100% {
+       background-position: 0 -16rem;
+    }
+}
+
+@media screen and (width: 375px) and (min-height: 724px) {
+	.arrow {
+		padding-bottom: 34px;
+	}
+	.video-tips {
+		padding-bottom: 34px;
+	}
+	.page1 .content {
+		height: 11.8rem;
+	}
+	.page2 .content {
+		top: 0.75rem;
+		height: 10.8rem;
+	}
+	.page2 .nail {
+		bottom: 0.36rem;
+	}
+	.page3 .content {
+		height: 100%;
+	}
+	.card-wrap .card-body {
+		height: 9.4rem;
+	}
+	.page4 .content {
+		background-position: 0 0;
+	}
+	.page4 .content .title {
+		top: 0.88rem;
+	}
+	.page4 .content .desc {
+		top: 2.15rem;
+	}
+	.page5 .bottom {
+		display: block;
+	}
+	.page6 .content {
+		height: 100%;
+	}
+	.page6 .title {
+		top: 0.8rem;
+	}
+	.page6 .desc {
+		top: 2.6rem;
+	}
+}
